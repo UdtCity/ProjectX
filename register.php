@@ -66,7 +66,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <?php } else { ?>                                            
+                                            <?php } else { ?>
                                             <div class="login">
                                                 <div id="signout">
                                                     <a id="signout" class="signout"><button>Signout</button></a>
@@ -138,10 +138,10 @@
                                                 <label>
                                                     <input id="address" placeholder="Address" type="text" tabindex="6">
                                                 </label>
-                                                
+
                                             </div>
                                             <div>
-                                                <input type="submit" value="create an account">
+                                                <input id="signup" type="submit" value="create an account">
                                             </div>
                                         </form>
                                     </div>
@@ -292,26 +292,28 @@
             <div class="clearfix"></div>
         </div>
     </div>
-        <script>
-            var toggle = true;
+    <script>
+        var toggle = true;
 
-            $(".sidebar-icon").click(function() {
-                if (toggle) {
-                    $(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+        $(".sidebar-icon").click(function() {
+            if (toggle) {
+                $(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+                $("#menu span").css({
+                    "position": "absolute"
+                });
+            } else {
+                $(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+                setTimeout(function() {
                     $("#menu span").css({
-                        "position": "absolute"
+                        "position": "relative"
                     });
-                } else {
-                    $(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
-                    setTimeout(function() {
-                        $("#menu span").css({
-                            "position": "relative"
-                        });
-                    }, 400);
-                }
+                }, 400);
+            }
 
-                toggle = !toggle;
-            });
-        </script>
+            toggle = !toggle;
+        });
+
+    </script>
 </body>
+
 </html>

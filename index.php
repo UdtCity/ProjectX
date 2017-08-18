@@ -64,7 +64,12 @@
                                             <?php } else { ?>                                            
                                             <div class="login">
                                                 <div id="signout">
-                                                    <a id="signout" class="signout"><button>Signout</button></a>
+                                                     <button id="signout" data-hover="Signout" type="button1"  class="button1"><span><?php 
+    { 
+      echo $_SESSION["USERNM"];
+  }
+  ?></span> </button>
+                                                    
                                                 </div>
                                             </div>
                                             <?php } ?>

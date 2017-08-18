@@ -2,19 +2,36 @@
 <html>
 
 <head>
-    <title>Cart</title>
+    <title>DEFAULT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="n" />
-    
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
     <link href="assets/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
     <link href="assets/css/style.css" rel='stylesheet' type='text/css' />
-    <link href="assets/css/font-awesome.css" rel='stylesheet' type='text/css'>
-    <link href="assets/css/icon-font.min.css" rel='stylesheet' type='text/css'/>
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/icon-font.min.css" type='text/css'/>
+
+    <script>
+
+    <!--<script src="assets/js/simpleCart.min.js"> </script>-->
+    <!--<script src="assets/js/amcharts.js"></script>
+    <script src="assets/js/serial.js"></script>-->
+    <!--<script src="assets/js/light.js"></script>  -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/custom.js"></script>
+
 </head>
-    
-<body onload="loadCart();">
-<?php require_once 'model/appConnection.php'; ?>
+
+<body>
     <div class="page-container">
         <!--/content-inner-->
         <div class="left-content">
@@ -28,19 +45,18 @@
                                 <div class="header_right">
                                     <div class="rgt-bottom">
                                         <div class="log">
-                                            <?php if(!isset($_SESSION['USERNM'])) { ?>
                                             <div class="login">
                                                 <div id="loginContainer"><a id="loginButton" class=""><span>Login</span></a>
                                                     <div id="loginBox" style="display: none;">
                                                         <form id="loginForm">
                                                             <fieldset id="body">
                                                                 <fieldset>
-                                                                    <label for="email">Mobile Number</label>
-                                                                    <input type="text" name="email" id="mobl">
+                                                                    <label for="email">Email Address</label>
+                                                                    <input type="text" name="email" id="email">
                                                                 </fieldset>
                                                                 <fieldset>
                                                                     <label for="password">Password</label>
-                                                                    <input type="password" name="password" id="pass">
+                                                                    <input type="password" name="password" id="password">
                                                                 </fieldset>
                                                                 <input type="submit" id="login" value="Sign in">
                                                                 <label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
@@ -50,25 +66,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <?php } else { ?>                                            
-                                            <div class="login">
-                                                <div id="signout">
-                                                     <button id="signout" data-hover="Signout" type="button1"  class="button1"><span><?php 
-    { 
-      echo $_SESSION["USERNM"];
-  }
-  ?></span> </button>
-                                                    
-                                                </div>
-                                            </div>
-                                            <?php } ?>
                                         </div>
                                         <div class="reg">
                                             <a href="register.php">REGISTER</a>
                                         </div>
                                         <div class="cart box_1">
                                             <a href="cart.php">
-                                                <h3> <span class="simpleCart_total"></span><span id="simpleCart_quantity" class="simpleCart_quantity"></span><img src="images/bag.png" alt=""></h3>
+                                                <h3> <span class="simpleCart_total"></span><span id="simpleCart_quantity" class="simpleCart_quantity"></span><img src="assets/images/bag.png" alt=""></h3>
                                             </a>
                                             <p><a href="javascript:;" class="simpleCart_empty"></a></p>
                                             <div class="clearfix"> </div>
@@ -91,127 +95,195 @@
                         </div>
                     </div>
                     <!-- //header-ends -->
+				<!--content-->
+			<div class="content">
+<div class="women_main">
+	<!-- start content -->
+   <div class="w_content">
+		<!-- grids_of_4 -->
+		<div class="grids_of_4">
+		 <div class="grid1_of_4">
+				<div class="content_box"><a href="test2.html">
+			   	   	 <img src="assets/images/s1.jpg" class="img-responsive" alt="">
+				   	  </a>
+				    <h4><a href="test2.html"> Duis autem</a></h4>
+				     <p>It is a long established fact that</p>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>ONLY $109.00</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="grid1_of_4">
+				<div class="content_box"><a href="test2.html">
+			   	   	 <img src="assets/images/s2.jpg" class="img-responsive" alt="">
+				   	  </a>
+				    <h4><a href="test2.html"> Duis autem</a></h4>
+				     <p>It is a long established fact that</p>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>ONLY $95.00</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="grid1_of_4">
+				<div class="content_box"><a href="test2.html">
+			   	   	 <img src="assets/images/s3.jpg" class="img-responsive" alt="">
+				   	  </a>
+				    <h4><a href="test2.html"> Duis autem</a></h4>
+				     <p>It is a long established fact that</p>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>ONLY $68.00</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="grid1_of_4">
+				<div class="content_box"><a href="test2.html">
+			   	   	 <img src="assets/images/s4.jpg" class="img-responsive" alt="">
+				   	  </a>
+				    <h4><a href="test2.html"> Duis autem</a></h4>
+				     <p>It is a long established fact that</p>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>ONLY $74.00</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="grids_of_4">
+		  <div class="grid1_of_4">
+				<div class="content_box"><a href="test2.html">
+			   	   	 <img src="assets/images/s5.jpg" class="img-responsive" alt="">
+				   	  </a>
+				    <h4><a href="test2.html"> Duis autem</a></h4>
+				     <p>It is a long established fact that</p>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>ONLY $80.00</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="grid1_of_4">
+				<div class="content_box"><a href="test2.html">
+			   	   	 <img src="assets/images/s6.jpg" class="img-responsive" alt="">
+				   	  </a>
+				    <h4><a href="test2.html"> Duis autem</a></h4>
+				     <p>It is a long established fact that</p>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>ONLY $65.00</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="grid1_of_4">
+				<div class="content_box"><a href="test2.html">
+			   	   	 <img src="assets/images/s7.jpg" class="img-responsive" alt="">
+				   	  </a>
+				    <h4><a href="test2.html"> Duis autem</a></h4>
+				     <p>It is a long established fact that</p>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>ONLY $90.00</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="grid1_of_4">
+				<div class="content_box"><a href="test2.html">
+			   	   	 <img src="assets/images/s8.jpg" class="img-responsive" alt="">
+				   	  </a>
+				    <h4><a href="test2.html"> Duis autem</a></h4>
+				     <p>It is a long established fact that</p>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>ONLY $75.00</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="grids_of_4">
+		  <div class="grid1_of_4">
+				<div class="content_box"><a href="test2.html">
+			   	   	 <img src="assets/images/s9.jpg" class="img-responsive" alt="">
+				   	  </a>
+				    <h4><a href="test2.html"> Duis autem</a></h4>
+				     <p>It is a long established fact that</p>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>ONLY $99.00</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="grid1_of_4">
+				<div class="content_box"><a href="test2.html">
+			   	   	 <img src="assets/images/s2.jpg" class="img-responsive" alt="">
+				   	  </a>
+				    <h4><a href="test2.html"> Duis autem</a></h4>
+				     <p>It is a long established fact that</p>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>ONLY $76.00</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="grid1_of_4">
+				<div class="content_box"><a href="test2.html">
+			   	   	 <img src="assets/images/s3.jpg" class="img-responsive" alt="">
+				   	  </a>
+				    <h4><a href="test2.html"> Duis autem</a></h4>
+				     <p>It is a long established fact that</p>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>ONLY $58.00</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="grid1_of_4">
+				<div class="content_box"><a href="test2.html">
+			   	   	 <img src="assets/images/s4.jpg" class="img-responsive" alt="">
+				   	  </a>
+				    <h4><a href="test2.html"> Duis autem</a></h4>
+				     <p>It is a long established fact that</p>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>ONLY $112.00</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		
+		
+		
+		<!-- end grids_of_4 -->
+		
+		
+	</div>
+   <div class="clearfix"></div>
+	<!-- end content -->
+	<!-- footer -->
 
-                <!--content-->
-                <div class="content">
-                    <div class="women_main">
-                        <!-- start content -->
-                        <div class="check">
-        
-                            <div class="col-md-9 cart-items">
-
-                                <div class="row">
-                                    <div class="col-sm-12 col-md-10 col-md-offset-1">
-                                        <table class="table table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th>Product</th>
-                                                    <th>Quantity</th>
-                                                    <th class="text-center">Price</th>
-                                                    <th class="text-center">Total</th>
-                                                    <th> </th>
-                                                </tr>
-                                            </thead>
-                                            
-                                            <tbody>
-                                                <!--<tr>
-                                                    <td class="col-md-6">
-                                                    <div class="media">
-                                                        <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
-                                                        <div class="media-body">
-                                                            <h4 class="media-heading"><a href="#">Product name</a></h4>
-                                                        </div>
-                                                    </div></td>
-                                                    <td class="col-md-1" style="text-align: center">
-                                                    <input type="email" class="form-control" id="exampleInputEmail1" value="2">
-                                                    </td>
-                                                    <td class="col-md-1 text-center"><strong>$4.99</strong></td>
-                                                    <td class="col-md-1 text-center"><strong>$9.98</strong></td>
-                                                    <td class="col-md-1">
-                                                    <button type="button" class="btn btn-danger">
-                                                        <span class="glyphicon glyphicon-remove"></span> Remove
-                                                    </button></td>
-                                                </tr>-->
-                                            </tbody>
-                                            
-                                            <tfoot>
-                                                <tr>
-                                                    <td>   </td>
-                                                    <td>   </td>
-                                                    <td>   </td>
-                                                    <td><h5>Subtotal<br>Estimated shipping</h5><h3>Total</h3></td>
-                                                    <td class="text-right"><h5><strong>$24.59<br>$6.94</strong></h5><h3>$31.53</h3></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>   </td>
-                                                    <td>   </td>
-                                                    <td>   </td>
-                                                    <td>
-                                                    <button type="button" class="btn btn-default">
-                                                        <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
-                                                    </button></td>
-                                                    <td><a href="checkout.php">
-                                                   <button type="button" class="btn btn-success">
-                                                        Checkout <span class="glyphicon glyphicon-play"></span>
-                                                        </button></a></td>
-                                                </tr>
-                                            </tfoot>
-                                            
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="clearfix"> </div>
-                        </div>
-
-                        <!-- end content -->
-                        <div class="foot-top">
-
-                            <div class="col-md-6 s-c">
-                                <li>
-                                    <div class="fooll">
-                                        <h1>follow us on</h1>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="social-ic">
-                                        <ul>
-                                            <li><a href="#"><i class="facebok"> </i></a></li>
-                                            <li><a href="#"><i class="twiter"> </i></a></li>
-                                            <li><a href="#"><i class="goog"> </i></a></li>
-                                            <li><a href="#"><i class="be"> </i></a></li>
-                                            <div class="clearfix"></div>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <div class="clearfix"> </div>
-                            </div>
-                            <div class="col-md-6 s-c">
-                                <div class="stay">
-                                    <div class="stay-left">
-                                        <form>
-                                            <input type="text" placeholder="Enter your email" required="">
-                                        </form>
-                                    </div>
-                                    <div class="btn-1">
-                                        <form>
-                                            <input type="submit" value="join">
-                                        </form>
-                                    </div>
-                                    <div class="clearfix"> </div>
-                                </div>
-                            </div>
-                            <div class="clearfix"> </div>
-
-                        </div>
-                        <div class="footer">
+                                   <div class="footer">
                             <div class="col-md-3 cust">
                                 <h4>CUSTOMER CARE</h4>
                                 <li><a href="contact.html">Help Center</a></li>
                                 <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="details.html">How To Buy</a></li>
+                                <li><a href="test2.html">How To Buy</a></li>
                                 <li><a href="checkout.html">Delivery</a></li>
                             </div>
                             <div class="col-md-2 abt">
@@ -226,7 +298,7 @@
                                 <li><a href="register.php">Register</a></li>
                                 <li><a href="checkout.html">My Cart</a></li>
                                 <li><a href="checkout.html">Order History</a></li>
-                                <li><a href="details.html">Payment</a></li>
+                                <li><a href="test2.html">Payment</a></li>
                             </div>
                             <div class="col-md-5 our-st">
                                 <div class="our-left">
@@ -238,7 +310,7 @@
                                 <li><a href="mailto:info@example.com"><i class="mail"> </i>info@sitename.com </a></li>
                             </div>
                             <div class="clearfix"> </div>
-                            <p>© 2016 Gretong. All Rights Reserved | Design by RINA</p>
+                            <p>© 2016 Gretong. All Rights Reserved | Design by RINA</a></p>
                         </div>
                     </div>
 
@@ -247,7 +319,8 @@
             </div>
         </div>
         <!--//content-inner-->
-     <div class="sidebar-menu">
+        <!--/sidebar-menu-->
+        <div class="sidebar-menu">
             <header class="logo1">
                 <a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a>
             </header>
@@ -285,13 +358,7 @@
             </div>
         </div>
         <div class="clearfix"></div>
-    
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/jquery.nicescroll.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/scripts.js"></script>
-    <script src="assets/js/cart.js"></script>
-    <script src="assets/js/bootstrap.js"></script>
+    </div>
     <script>
         var toggle = true;
 
@@ -313,5 +380,11 @@
             toggle = !toggle;
         });
     </script>
+    <!--js -->
+    <script src="assets/js/jquery.nicescroll.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+   
 </body>
+
 </html>

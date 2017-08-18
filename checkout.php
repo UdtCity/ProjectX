@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Cart</title>
+    <title>checkout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="n" />
@@ -91,82 +91,208 @@
                         </div>
                     </div>
                     <!-- //header-ends -->
-
-                <!--content-->
-                <div class="content">
-                    <div class="women_main">
-                        <!-- start content -->
-                        <div class="check">
-        
-                            <div class="col-md-9 cart-items">
-
-                                <div class="row">
-                                    <div class="col-sm-12 col-md-10 col-md-offset-1">
-                                        <table class="table table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th>Product</th>
-                                                    <th>Quantity</th>
-                                                    <th class="text-center">Price</th>
-                                                    <th class="text-center">Total</th>
-                                                    <th> </th>
-                                                </tr>
-                                            </thead>
-                                            
-                                            <tbody>
-                                                <!--<tr>
-                                                    <td class="col-md-6">
-                                                    <div class="media">
-                                                        <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
-                                                        <div class="media-body">
-                                                            <h4 class="media-heading"><a href="#">Product name</a></h4>
-                                                        </div>
-                                                    </div></td>
-                                                    <td class="col-md-1" style="text-align: center">
-                                                    <input type="email" class="form-control" id="exampleInputEmail1" value="2">
-                                                    </td>
-                                                    <td class="col-md-1 text-center"><strong>$4.99</strong></td>
-                                                    <td class="col-md-1 text-center"><strong>$9.98</strong></td>
-                                                    <td class="col-md-1">
-                                                    <button type="button" class="btn btn-danger">
-                                                        <span class="glyphicon glyphicon-remove"></span> Remove
-                                                    </button></td>
-                                                </tr>-->
-                                            </tbody>
-                                            
-                                            <tfoot>
-                                                <tr>
-                                                    <td>   </td>
-                                                    <td>   </td>
-                                                    <td>   </td>
-                                                    <td><h5>Subtotal<br>Estimated shipping</h5><h3>Total</h3></td>
-                                                    <td class="text-right"><h5><strong>$24.59<br>$6.94</strong></h5><h3>$31.53</h3></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>   </td>
-                                                    <td>   </td>
-                                                    <td>   </td>
-                                                    <td>
-                                                    <button type="button" class="btn btn-default">
-                                                        <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
-                                                    </button></td>
-                                                    <td><a href="checkout.php">
-                                                   <button type="button" class="btn btn-success">
-                                                        Checkout <span class="glyphicon glyphicon-play"></span>
-                                                        </button></a></td>
-                                                </tr>
-                                            </tfoot>
-                                            
-                                        </table>
-                                    </div>
-                                </div>
+				<!--content-->
+			<div class="content">
+				<div class="women_main">
+						<!-- start content -->	
+									<div class="col-md-6 graph-2 second">
+										<h3 class="inner-tittle">1.Check your Address</h3>
+											<div class="panel panel-primary two">
+												<div class="panel-heading">FOr Delivery Purpose </div>
+													<div class="panel-body ont two">
+		<!-- [if IE] 
+		    < link rel='stylesheet' type='text/css' href='ie.css'/>  
+		 [endif] -->  
+		  
+		<!-- [if lt IE 7]>  
+		    < link rel='stylesheet' type='text/css' href='ie6.css'/>  
+		<! [endif] -->  
+		<script>
+			(function() {
+		
+			// Create input element for testing
+			var inputs = document.createElement('input');
+			
+			// Create the supports object
+			var supports = {};
+			
+			supports.autofocus   = 'autofocus' in inputs;
+			supports.required    = 'required' in inputs;
+			supports.placeholder = 'placeholder' in inputs;
+		
+			// Fallback for autofocus attribute
+			if(!supports.autofocus) {
+				
+			}
+			
+			// Fallback for required attribute
+			if(!supports.required) {
+				
+			}
+		
+			// Fallback for placeholder attribute
+			if(!supports.placeholder) {
+				
+			}
+			
+			// Change text inside send button on submit
+			var send = document.getElementById('register-submit');
+			if(send) {
+				send.onclick = function () {
+					this.innerHTML = '...Sending';
+				}
+			}
+		
+		})();
+		</script>
+		 <div class="registration_form">
+		 <!-- Form -->
+			<form>
+				<div>
+					<label>
+						<input placeholder="first name:" type="text" tabindex="1" required="" autofocus="">
+					</label>
+				</div>
+				<div>
+					<label>
+						<input placeholder="Fathers name:" type="text" tabindex="2" required="" autofocus="">
+					</label>
+				</div>
+				
+				<div>
+					<label>
+						<input placeholder="Address:" type="text" tabindex="3" required="" autofocus="">
+					</label>
+				</div>						
+				<div>
+					<label>
+						<input placeholder="LandMark:" type="text" tabindex="4" required="" autofocus="">
+					</label>
+				</div>	
+				<div>
+					<input type="submit" value="Agree">
+				</div>
+				<div class="sky-form">
+					<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>i agree to UDT2&nbsp;<a class="terms" href="#"> terms of service</a> </label>
+				</div>
+			</form>
+</div>
+</div>
+														<div class="panel-footer">
+															THANK YOU
+														</div>
+											</div>
+									</div>
+									<div class="col-md-6 graph-2 second">
+										<h3 class="inner-tittle">2.CHECK Your Cart </h3>
+											<div class="panel panel-primary two">
+												<div class="panel-heading"></div>
+													<div class="panel-body ont two">
+													<div class="row">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th class="text-center">Price</th>
+                        <th class="text-center">Total</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--<tr>
+                        <td class="col-md-6">
+                        <div class="media">
+                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">Product name</a></h4>
                             </div>
+                        </div></td>
+                        <td class="col-md-1" style="text-align: center">
+                        <input type="email" class="form-control" id="exampleInputEmail1" value="2">
+                        </td>
+                        <td class="col-md-1 text-center"><strong>$4.99</strong></td>
+                        <td class="col-md-1 text-center"><strong>$9.98</strong></td>
+                        <td class="col-md-1">
+                        <button type="button" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove"></span> Remove
+                        </button></td>
+                    </tr>-->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h5>Subtotal<br>Estimated shipping</h5><h3>Total</h3></td>
+                        <td class="text-right"><h5><strong>RS24.59<br>RS6.94</strong></h5><h3>RS31.53</h3></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>    </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    
+														<div class="panel-footer">
+															
+														</div>
+											</div>
+									</div>
+									<div class="col-md-6 graph-2 second">
+										<h3 class="inner-tittle">3.CHECKOUT</h3>
+											<div class="panel panel-primary two">
+												<div class="panel-heading">Door Delivery ONLY AVAILABLE</div>
+													<div class="panel-body ont two"><p>READ THE Terms and Conditions For assistance 
+													contact:012345679
+													</p>
 
+<button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
+                        </button>
+                      
+                       <!-- <button type="button" class="btn btn-success">
+                            PLACE ORDER <span class="glyphicon glyphicon-play"></span>
+                        </button>-->
+                                                        
+                                                        
+                                                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"> PLACE ORDER</button>
 
-                            <div class="clearfix"> </div>
-                        </div>
-
-                        <!-- end content -->
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">ORDER</h4>
+        </div>
+        <div class="modal-body">
+          <p>click confirm to place order</p>
+        </div>
+        <div class="modal-footer">
+          <a href="index.php"><button type="button" class="btn btn-default">confirm</button></a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+													</div>
+														<div class="panel-footer">
+															THANK YOU 
+														</div>
+											</div>
+									</div>
+										<div class="clearfix"> </div>
+								</div>
+							</div>
+  <!-- end content -->
                         <div class="foot-top">
 
                             <div class="col-md-6 s-c">
@@ -242,10 +368,7 @@
                         </div>
                     </div>
 
-                </div>
                 <!--content-->
-            </div>
-        </div>
         <!--//content-inner-->
      <div class="sidebar-menu">
             <header class="logo1">
@@ -283,8 +406,12 @@
                     </li>
                 </ul>
             </div>
+         <div class="clearfix"></div>
         </div>
-        <div class="clearfix"></div>
+    </div>
+        </div>
+    </div>
+        
     
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/jquery.nicescroll.js"></script>
