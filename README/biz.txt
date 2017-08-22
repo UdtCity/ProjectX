@@ -1,0 +1,89 @@
+Development :
+	Database - Schema, Tables, Services
+	PHP - Database, File_Uploading, Role_Management - Business, Admin, Delivery, User View, Forms, 
+	Dropzone JS - File Uploading
+
+Admin :
+
+Drap and Drop
+Product History : 
+	UserName
+	Mobile_No
+	Category
+	Product
+	Paid
+	DateTime
+	Service
+	Feedback
+
+Business Partner :
+	Partner
+	Category
+	Product_List
+	Items
+
+Deliver Boy :
+	Partner
+	Category
+	Product_List
+	Items
+	Perf_timing
+	
+
+Deliver Boy:
+UserName
+Mobile_No
+Category : 
+Product :
+Price :
+Address :
+Dispatch Timing :
+Close Timing :
+ 
+
+7 Tables : 
+
+1 ) Kickgrass :
+
+Customer
+Mobile No 
+Product : 
+Price : 
+Booked Timing :
+
+Deliver Timing :
+
+2 ) Udt Mobiles :
+
+View Phones
+
+3 ) Mens Parlour vs Gorgeous :
+
+View Types
+Book Slot
+
+4) Grocery vs Medicals :
+
+View Items
+
+5 ) Clothing vs Boutique:
+
+View Fashions
+
+6) FootWear :
+
+View Collections
+
+7 ) Meat :
+
+View Items
+Customer
+Mobile No 
+Product : 
+Price : 
+Booked Timing :
+
+8 ) Fashion :
+
+View Collections
+Offers

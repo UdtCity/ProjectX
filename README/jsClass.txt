@@ -1,0 +1,60 @@
+class Session extends Map {
+
+     set(id, value) {
+       if ( typeof value === 'object' ) value= JSON.stringify(value);
+       sessionStorage.setItem(id, value);
+     }
+
+     get(id) {
+       const value = sessionStorage.getItem(id);
+       try {
+         return JSON.parse(value);
+       } catch(e) {
+         return value; 
+       }
+
+     }
+     
+     length() {
+        const value = sessionStorage.length;
+        try {
+            return value;
+        } catch(e) {
+            return value; 
+       }
+     }
+}
+
+var arr = ['1201','1202','1203'];
+const session = new Session();
+
+session.set('1201', {name: 'Empty Briyani', price : '120'});
+session.set('1202', {name: 'Chicken Briyani', price : '140'});
+session.set('1203', {name: 'Mutton Briyani', price : '160'});
+
+for(var key in sessionStorage) {
+  console.log((sessionStorage.getItem(key)));
+}
+
+session.get('name');
+
+$(document).ready(function(){
+            const session = new Session();
+            session.set('1000', {name: 'Empty Briyani', price : '120'});
+            session.set('1001', {name: 'Chicken Briyani', price : '140'});
+            session.set('1002', {name: 'Mutton Briyani', price : '160'});
+            for(var key in sessionStorage) {
+                var thiss = JSON.parse(sessionStorage.getItem(key));
+                var dynmRow = '<tr id="'+key+'"><td class="col-md-6"><div class="media"><a class="thumbnail pull-left" href="#"> <img class="media-object" src="assets/images/biz/kickgrass/'+key+'.jpg" style="width: 72px; height: 72px;"> </a><div class="media-body"><h4 class="media-heading"><a href="#">'+thiss.name+'</a></h4></div></div></td><td class="col-md-1" style="text-align: center"><input id="numberCheck" type="email" class="form-control" id="exampleInputEmail1" value="1" maxlength="1"></td><td class="col-md-1 text-center"><strong>'+thiss.price+'</strong></td><td class="col-md-1 text-center"><strong>$9.98</strong></td><td class="col-md-1"><button id="" type="button" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Remove</button></td></tr>';
+                $("tbody").append(dynmRow);
+            }
+            
+            
+            $("#numberCheck").on("keypress", function(evt) {
+              var keycode = evt.charCode || evt.keyCode;
+                if (keycode < 48 || evt.which > 57) {
+                    evt.preventDefault();
+              }
+            });
+            
+});
