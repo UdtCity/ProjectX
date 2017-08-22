@@ -1,3 +1,9 @@
+<?php
+
+    ini_set('display_errors', 0);
+
+?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -15,7 +21,6 @@
           position: relative;
           display: inline-block;
           width: 60px;
-          
           height: 34px;
         }
 
@@ -71,7 +76,8 @@
 </head>
 <body>
 <?php
-    include_once 'model/kickGrassHotel/kickgrassAdmin.php';
+    require_once 'model/appConnection.php';
+    require_once 'model/kickGrassHotel/AdminBookingList.php';
 ?>
 <div class="container">
   <h2>Booking Table</h2>
@@ -109,7 +115,7 @@
     
 <script src="assets/js/jquery.js"></script>
 <script>
-    $('input[class="orderTaken"]').click(function () {
+    /*$('input[class="orderTaken"]').click(function () {
         $(this).addClass('checked');
         var id = $(this).val();
         var url = 'model/kickGrassHotel/kickGrassAdmin.php';
@@ -133,7 +139,7 @@
                 console.log(xhr);
             });
         
-    });
+    });*/
     
     $('input[class="orderDsptch"]').click(function () {
         //var preventCheck = $('input[class="orderTaken"]').hasClass('checked');
@@ -141,7 +147,7 @@
             /*var id = $(this).attr('id');*/
             var id = $(this).val();
 //            var classCheck = $(this).hasClass('checked')
-            var url = 'model/cartBooking.php';
+            var url = 'model/kickGrassHotel/AdminUpdateBookTime.php';
             $.ajax({
                 url: url,
                 data: {
@@ -173,11 +179,11 @@
         <i class="more-less glyphicon glyphicon-menu-up"></i>
         <i class="more-less glyphicon glyphicon-menu-down"></i>
 <?php
-    include_once 'model/kickGrassHotel/kickgrassModel.php';
+    require_once 'model/kickGrassHotel/HotelDisplayItems.php'; ?>
 ?>        
 		<div class="panel-group" id="accordion">
         <?php
-          
+          if(isset($getProducts)) { 
             foreach($getProducts as $item) { ?>
                 <div class="panel panel-default collapseBox">
                     <div class="panel-heading">
@@ -212,10 +218,11 @@
                         </div>
                     </div>
 			     </div>
-        <?php } ?>		
+            <?php } ?>		
+        <?php } ?>        
         </div>
 </div>
-<script>
+<!--<script>
     $('input[class="checkBox"]').click(function () {
         if($(this).hasClass('checked')) {
             $(this).removeClass('checked');
@@ -249,7 +256,7 @@
             });
         
     });
-</script>
+</script>-->
 <script src="assets/js/bootstrap.js"></script>
 </body>
 </html>
