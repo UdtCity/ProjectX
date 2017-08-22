@@ -1,6 +1,6 @@
 <?php
 
-    require_once '../appConnection.php';
+    include_once '../appConnection.php';
 
     class KickGrassAdmin {
         
@@ -28,9 +28,9 @@
         }
     
             
-        static public function getBookingList($usr) {
+        static public function getBookingList() {
             
-            if(isset($_SESSION[$usr])) {
+            if(isset($_SESSION['USERMB'])) {
                 
                 try {
                     $conn = Connection::openConnection();
@@ -55,7 +55,7 @@
             try {
                 $conn = Connection::openConnection();
                 $stmt = $conn->prepare("UPDATE kickgrass_book SET DISPATCH_TIME = :time WHERE BOOK_ID = :id") ;
-                $stmt->execute(array(':time' => dateTime(), ':id' => $id));       
+                $stmt->execute(array(':time' => self::dateTime(), ':id' => $id));       
                 if($stmt) {
                     return true;
                 }

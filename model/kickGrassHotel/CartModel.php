@@ -1,11 +1,10 @@
 <?php
-    session_start();
 
     require_once '../appConnection.php';
 
-    class AddToCart {
+    class BookOrder {
         
-        static public function initializeBooking($prodid, $prodnm, $quant) {
+        static protected function initializeBooking($prodid, $prodnm, $quant) {
              
             try	{
                 $conn = Connection::openConnection();
@@ -27,7 +26,7 @@
         }
         
     
-        static public function initializeDelivery($class, $prodid, $prodnm, $quant) {
+        static protected function initializeDelivery($class, $prodid, $prodnm, $quant) {
             
             try {
                 $conn = Connection::openConnection();
@@ -87,4 +86,33 @@
             
         }
         
+    }
+
+    class CheckOut extends  BookOrder {
+    
+        static private function convJSONtoOBJ($arr) {
+
+            $temp = [];
+
+            foreach($arr as $key => $value) {
+                $temp[$key] = json_decode($value, true);
+            }
+
+            return $temp;
+            
+        }
+
+        static public function bookTheOrder($arr, $class) {
+
+            $dataArray = self::convJSONtoOBJ($arr);
+
+            foreach($dataArray as $key => $value) {
+                BookOrder::initializeBooking($key, $value['name'], $value['quant']);
+                BookOrder::initializeDelivery($class, $key, $value['name'], $value['quant']);
+            }
+
+            return true;
+            
+        }
+
     }
