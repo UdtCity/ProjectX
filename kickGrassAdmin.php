@@ -4,13 +4,7 @@
 
 ?>
 
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>KickGrass Admin Dashboard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<?php include 'common/commonHead.php'; ?>
     <style>
         .collapseBox {
             margin-left: 120px;
@@ -73,13 +67,18 @@
           border-radius: 50%;
         }
 </style>
-</head>
 <body>
 <?php
     require_once 'model/appConnection.php';
     require_once 'model/kickGrassHotel/AdminBookingList.php';
 ?>
-<div class="container">
+    <div class="page-container">
+        <div class="left-content">
+            <div class="inner-content">
+    <div class="content">
+    <div class="monthly-grid">
+						<div class="panel panel-widget">
+
   <h2>Booking Table</h2>
   <table class="table table-sm">
     <thead>
@@ -109,7 +108,6 @@
 <?php } ?>
     </tbody>
   </table>
-</div>
     
 
     
@@ -170,16 +168,21 @@
     });
 </script>
     
-    
-<div class="container">
-		<h2>Admin Dashboard :</h2>
+    </div>
+                    </div>
+			     </div>
+<div class="content">
+    <div class="monthly-grid">
+						<div class="panel panel-widget">
+
+		<h2>Admin Dashboard </h2>
 		<i class="more-less glyphicon glyphicon-plus"></i>
 		<i class="more-less glyphicon glyphicon-minus"></i>
 		<i class="more-less glyphicon glyphicon-pencil"></i>
         <i class="more-less glyphicon glyphicon-menu-up"></i>
         <i class="more-less glyphicon glyphicon-menu-down"></i>
 <?php
-    require_once 'model/kickGrassHotel/HotelDisplayItems.php'; ?>
+    require_once 'model/kickGrassHotel/HotelDisplayItems.php'; 
 ?>        
 		<div class="panel-group" id="accordion">
         <?php
@@ -220,8 +223,17 @@
 			     </div>
             <?php } ?>		
         <?php } ?>        
-        </div>
+
+
 </div>
+                 
+                    </div>
+</div>
+        </div>                     
+        <?php include 'common/adminnav.php'; ?> 
+                  </div>
+</div>
+        </div>
 <!--<script>
     $('input[class="checkBox"]').click(function () {
         if($(this).hasClass('checked')) {
