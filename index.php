@@ -4,14 +4,16 @@
     <?php require_once 'model/appConnection.php'; ?>
     <div class="page-container">
         <div class="left-content">
+            
             <div class="inner-content">
                 <?php include 'common/commonHeader.php'; ?>
                 <!--content-->
                 <div class="content">
                     <!-- banner-slider -->
                     <div class="l_banner_info" id="home">
-                        <div class="slider">
+                        <div href="news.php" class="slider">
                             <div class="callbacks_container">
+                                <a  href="news.php">
                                 <ul class="rslides" id="slider3">
                                     <li>
                                         <div class="slider-img">
@@ -29,6 +31,7 @@
                                         </div>
                                     </li>
                                 </ul>
+                                    </a>
                             </div>
                         </div>
                     </div>
@@ -54,7 +57,7 @@
 
                         });
                     </script>
-
+      
                     <div class="trending-ads">
                         <div class="container">
                             <!-- slider -->
@@ -227,7 +230,7 @@
                     <div class="women_main">
                         <div class="deals">
 
-                            <div class="maincontainer">
+                            <div class="mcontainer">
                                 <div class="tab-inner">
                                     <div id="tabs" class="tabs">
                                         <h3>DEALS OF THE DAY </h3>
@@ -235,8 +238,8 @@
                                             <nav>
                                                 <ul>
                                                     <li class="tab-current"><a class="icon-shop"><span>MObile</span></a></li>
-                                                    <li class="tab-current"><a href="kick.php" class="icon-cup"><span>Hotels</span></a></li>
-                                                    <li class="tab-current"><a class="icon-food"><span>MOVIES</span></a></li>
+                                                    <li class="tab-current"><a href="kickGrass.php" class="icon-cup"><span>Hotels</span></a></li>
+                                                    <li class="tab-current"><a href="movies.php" class="icon-food"><span>MOVIES</span></a></li>
                                                     <li class="tab-current"><a class="icon-lab"><span>parlours</span></a></li>
                                                     <li class="tab-current"><a class="icon-truck"><span>clothing</span></a></li>
                                                 </ul>
@@ -295,9 +298,88 @@
 
 
                         </div>
-
                     </div>
                 </div>
+                <div class="col-md-5 skil">
+								<div class="content-top-1">
+									<div class="col-md-6 top-content">
+										<h5>UDT WHETHER</h5>
+										<label></label>
+									</div>
+									<div class="col-md-6 top-content1">	   
+										<div id="demo-pie-1" class="pie-title-center" data-percent="25"> <span class="pie-value">25%</span> </div>
+									</div>
+										<div class="clearfix"> </div>
+								</div>
+								<div class="content-top-1">
+									<div class="col-md-6 top-content">
+										<h5>Petrol TODAYRATE</h5>
+										<label></label>
+									</div>
+									<div class="col-md-6 top-content1">	   
+										<div id="demo-pie-2" class="pie-title-center" data-percent="50"> <span class="pie-value">50%</span> </div>
+									</div>
+									 <div class="clearfix"> </div>
+								</div>
+								<div class="content-top-1">
+									<div class="col-md-6 top-content">
+										<h5>Cards</h5>
+										<label></label>
+									</div>
+									<div class="col-md-6 top-content1">	   
+										<div id="demo-pie-3" class="pie-title-center" data-percent="75"> <span class="pie-value">75%</span> </div>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+							<div class="col-md-7 mid-content-top">
+								<div class="middle-content">
+									<h3>Latest Products
+									</h3>
+									<!-- start content_slider -->
+										<div id="owl-demo" class="owl-carousel text-center">
+											<div class="item">
+												<img class="lazyOwl img-responsive" data-src="assets/images/na.jpg" alt="name">
+											</div>
+											<div class="item">
+												<img class="lazyOwl img-responsive" data-src="assets/images/na1.jpg" alt="name">
+											</div>
+											<div class="item">
+												<img class="lazyOwl img-responsive" data-src="assets/images/na2.jpg" alt="name">
+											</div>
+											<div class="item">
+												<img class="lazyOwl img-responsive" data-src="assets/images/na.jpg" alt="name">
+											</div>
+											<div class="item">
+												<img class="lazyOwl img-responsive" data-src="assets/images/na1.jpg" alt="name">
+											</div>
+											<div class="item">
+												<img class="lazyOwl img-responsive" data-src="assets/images/na2.jpg" alt="name">
+											</div>
+											<div class="item">
+												<img class="lazyOwl img-responsive" data-src="assets/images/na.jpg" alt="name">
+											</div>
+											
+										</div>
+								</div>
+								<!--//sreen-gallery-cursual---->
+								<!-- requried-jsfiles-for owl -->
+								<link href="assets/css/owl.carousel.css" rel="stylesheet">
+								<script src="assets/js/owl.carousel.js"></script>
+									<script>
+										$(document).ready(function() {
+											$("#owl-demo").owlCarousel({
+												items : 3,
+												lazyLoad : true,
+												autoPlay : true,
+												pagination : true,
+												nav:true,
+											});
+										});
+									</script>
+								<!-- //requried-jsfiles-for owl -->
+						</div>
+						<div class="clearfix"></div>
                 <!--content-->
                 <?php include 'common/commonFooter.php'; ?>
                 <?php include 'common/commonNavigation.php'; ?>

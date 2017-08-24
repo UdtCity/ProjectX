@@ -4,20 +4,18 @@
 
 ?>
 
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>Pintos Admin Dashboard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-</head>
+<?php include 'common/commonHead.php'; ?>
 <body>
 <?php
     require_once 'model/appConnection.php';
     require_once 'model/pintoDelivery/PintoDeliveryList.php';
 ?>
-<div class="container">
+<div class="page-container">
+        <div class="left-content">
+            <div class="inner-content">
+    <div class="content">
+    <div class="monthly-grid">
+						<div class="panel panel-widget">
   <h2>Delivery Table</h2>
   <table class="table table-sm">
     <thead>
@@ -52,6 +50,8 @@
     </tbody>
   </table>
 </div>
+        </div></div></div> <?php include 'common/adminnav.php'; ?> 
+                  </div></div>
     
 <script src="assets/js/jquery.js"></script>
 <script>
