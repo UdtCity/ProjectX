@@ -52,7 +52,7 @@
                             <div class="clearfix"> </div>
                         </div>
                         <div class="create_btn">
-                            <a href="cart.php">CART</a>
+                            <a href="cart.php"></a>
                         </div>
                         <div class="clearfix"> </div>
                     </div>
