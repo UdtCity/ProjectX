@@ -89,7 +89,7 @@
                                                             <div class="grid_1 simpleCart_shelfItem">
 
                                                                 <div class="item_add"><span class="item_price"><h6>Rs<?php echo $row['PRICE'];?></h6></span></div>
-                                                                <div class="item_add" onclick="addingToCart('<?php echo $row['PRODUCT_ID'];?>','<?php echo $row['PRODUCT_NAME'];?>','<?php echo $row['PRICE'];?>','1')"><span class="item_price"><a href="#">Add to cart</a></span></div>
+                                                                <div class="item_add" onclick="addingToCart('<?php echo $row['PRODUCT_ID'];?>','<?php echo $row['PRODUCT_NAME'];?>','<?php echo $row['PRICE'];?>','1')"><span class="item_price"><a href="#">AddToCart</a></span></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -111,7 +111,7 @@
                                                             <div class="grid_1 simpleCart_shelfItem">
 
                                                                 <div class="item_add"><span class="item_price"><h6>Rs<?php echo $row['PRICE'];?></h6></span></div>
-                                                                <div class="item_add" onclick="addingToCart('<?php echo $row['PRODUCT_ID'];?>','<?php echo $row['PRODUCT_NAME'];?>','<?php echo $row['PRICE'];?>','1')"><span class="item_price"><a href="#">Add to cart</a></span></div>
+                                                                <div class="item_add" onclick="addingToCart('<?php echo $row['PRODUCT_ID'];?>','<?php echo $row['PRODUCT_NAME'];?>','<?php echo $row['PRICE'];?>','1')"><span class="item_price"><a href="#">AddToCart</a></span></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -133,7 +133,7 @@
                                                             <div class="grid_1 simpleCart_shelfItem">
 
                                                                 <div class="item_add"><span class="item_price"><h6>Rs<?php echo $row['PRICE'];?></h6></span></div>
-                                                                <div class="item_add" onclick="addingToCart('<?php echo $row['PRODUCT_ID'];?>','<?php echo $row['PRODUCT_NAME'];?>','<?php echo $row['PRICE'];?>','1')"><span class="item_price"><a href="#">Add to cart</a></span></div>
+                                                                <div class="item_add" onclick="addingToCart('<?php echo $row['PRODUCT_ID'];?>','<?php echo $row['PRODUCT_NAME'];?>','<?php echo $row['PRICE'];?>','1')"><span class="item_price"><a href="#">AddToCart</a></span></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -155,7 +155,7 @@
                                                             <div class="grid_1 simpleCart_shelfItem">
 
                                                                 <div class="item_add"><span class="item_price"><h6>Rs<?php echo $row['PRICE'];?></h6></span></div>
-                                                                <div class="item_add" onclick="addingToCart('<?php echo $row['PRODUCT_ID'];?>','<?php echo $row['PRODUCT_NAME'];?>','<?php echo $row['PRICE'];?>','1')"><span class="item_price"><a href="#">Add to cart</a></span></div>
+                                                                <div class="item_add" onclick="addingToCart('<?php echo $row['PRODUCT_ID'];?>','<?php echo $row['PRODUCT_NAME'];?>','<?php echo $row['PRICE'];?>','1')"><span class="item_price"><a href="#">AddToCart</a></span></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -177,7 +177,7 @@
                                                             <div class="grid_1 simpleCart_shelfItem">
 
                                                                 <div class="item_add"><span class="item_price"><h6>Rs<?php echo $row['PRICE'];?></h6></span></div>
-                                                                <div class="item_add" onclick="addingToCart('<?php echo $row['PRODUCT_ID'];?>','<?php echo $row['PRODUCT_NAME'];?>','<?php echo $row['PRICE'];?>','1')"><span class="item_price"><a href="#">Add to cart</a></span></div>
+                                                                <div class="item_add" onclick="addingToCart('<?php echo $row['PRODUCT_ID'];?>','<?php echo $row['PRODUCT_NAME'];?>','<?php echo $row['PRICE'];?>','1')"><span class="item_price"><a href="#">AddToCart</a></span></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -199,7 +199,7 @@
                                                             <div class="grid_1 simpleCart_shelfItem">
 
                                                                 <div class="item_add"><span class="item_price"><h6>Rs<?php echo $row['PRICE'];?></h6></span></div>
-                                                                <div class="item_add" onclick="addingToCart('<?php echo $row['PRODUCT_ID'];?>','<?php echo $row['PRODUCT_NAME'];?>','<?php echo $row['PRICE'];?>','1')"><span class="item_price"><a href="#">Add to cart</a></span></div>
+                                                                <div class="item_add" onclick="addingToCart('<?php echo $row['PRODUCT_ID'];?>','<?php echo $row['PRODUCT_NAME'];?>','<?php echo $row['PRICE'];?>','1')"><span class="item_price"><a href="#"></a>AddToCart</span></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -221,7 +221,7 @@
                                                             <div class="grid_1 simpleCart_shelfItem">
 
                                                                 <div class="item_add"><span class="item_price"><h6>Rs<?php echo $row['PRICE'];?></h6></span></div>
-                                                                <div class="item_add" onclick="addingToCart('<?php echo $row['PRODUCT_ID'];?>','<?php echo $row['PRODUCT_NAME'];?>','<?php echo $row['PRICE'];?>','1')"><span class="item_price"><a href="#">Add to cart</a></span></div>
+                                                                <div class="item_add" onclick="addingToCart('<?php echo $row['PRODUCT_ID'];?>','<?php echo $row['PRODUCT_NAME'];?>','<?php echo $row['PRICE'];?>','1')"><span class="item_price"><a href="#">AddToCart</a></span></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -244,7 +244,7 @@
                                                             <div class="grid_1 simpleCart_shelfItem">
 
                                                                 <div class="item_add"><span class="item_price"><h6>Rs<?php echo $row['PRICE'];?></h6></span></div>
-                                                                <div class="item_add" onclick="addingToCart('<?php echo $row['PRODUCT_ID'];?>','<?php echo $row['PRODUCT_NAME'];?>','<?php echo $row['PRICE'];?>','1')"><span class="item_price"><a href="#">Add to cart</a></span></div>
+                                                                <div class="item_add" onclick="addingToCart('<?php echo $row['PRODUCT_ID'];?>','<?php echo $row['PRODUCT_NAME'];?>','<?php echo $row['PRICE'];?>','1')"><span class="item_price"><a href="#">AddToCart</a></span></div>
                                                             </div>
                                                         </div>
                                                     </div>

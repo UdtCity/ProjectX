@@ -59,7 +59,7 @@
                     </script>
       
                     <div class="trending-ads">
-                        <div class="container">
+                        <div class="monthly-grid">
                             <!-- slider -->
                             <div class="trend-ads">
                                 <h2>Trending Ads</h2>
@@ -71,7 +71,7 @@
                                                 <span class="price">Rs 450</span>
                                             </a>
                                             <div class="ad-info">
-                                                <h5>There are many variations of passages</h5>
+                                                <h5></h5>
                                                 <span>1 hour ago</span>
                                             </div>
                                         </div>
@@ -81,7 +81,7 @@
                                                 <span class="price">Rs 399</span>
                                             </a>
                                             <div class="ad-info">
-                                                <h5>Lorem Ipsum is simply dummy</h5>
+                                                <h5></h5>
                                                 <span>3 hour ago</span>
                                             </div>
                                         </div>
@@ -91,7 +91,7 @@
                                                 <span class="price">Rs 199</span>
                                             </a>
                                             <div class="ad-info">
-                                                <h5>It is a long established fact that a reader</h5>
+                                                <h5></h5>
                                                 <span>8 hour ago</span>
                                             </div>
                                         </div>
@@ -101,7 +101,7 @@
                                                 <span class="price">Rs 159</span>
                                             </a>
                                             <div class="ad-info">
-                                                <h5>passage of Lorem Ipsum you need to be</h5>
+                                                <h5></h5>
                                                 <span>19 hour ago</span>
                                             </div>
                                         </div>
@@ -113,7 +113,7 @@
                                                 <span class="price">Rs 1599</span>
                                             </a>
                                             <div class="ad-info">
-                                                <h5>There are many variations of passages</h5>
+                                                <h5></h5>
                                                 <span>1 hour ago</span>
                                             </div>
                                         </div>
@@ -123,7 +123,7 @@
                                                 <span class="price">Rs 1099</span>
                                             </a>
                                             <div class="ad-info">
-                                                <h5>passage of Lorem Ipsum you need to be</h5>
+                                                <h5></h5>
                                                 <span>1 day ago</span>
                                             </div>
                                         </div>
@@ -133,7 +133,7 @@
                                                 <span class="price">Rs 109</span>
                                             </a>
                                             <div class="ad-info">
-                                                <h5>It is a long established fact that a reader</h5>
+                                                <h5></h5>
                                                 <span>9 hour ago</span>
                                             </div>
                                         </div>
@@ -143,7 +143,7 @@
                                                 <span class="price">Rs 189</span>
                                             </a>
                                             <div class="ad-info">
-                                                <h5>Lorem Ipsum is simply dummy</h5>
+                                                <h5></h5>
                                                 <span>3 hour ago</span>
                                             </div>
                                         </div>
@@ -155,7 +155,7 @@
                                                 <span class="price">Rs 2599</span>
                                             </a>
                                             <div class="ad-info">
-                                                <h5>Lorem Ipsum is simply dummy</h5>
+                                                <h5></h5>
                                                 <span>3 hour ago</span>
                                             </div>
                                         </div>
@@ -165,7 +165,7 @@
                                                 <span class="price">Rs 3999</span>
                                             </a>
                                             <div class="ad-info">
-                                                <h5>It is a long established fact that a reader</h5>
+                                                <h5></h5>
                                                 <span>9 hour ago</span>
                                             </div>
                                         </div>
@@ -175,7 +175,7 @@
                                                 <span class="price">Rs 2699</span>
                                             </a>
                                             <div class="ad-info">
-                                                <h5>passage of Lorem Ipsum you need to be</h5>
+                                                <h5></h5>
                                                 <span>1 day ago</span>
                                             </div>
                                         </div>
@@ -185,7 +185,7 @@
                                                 <span class="price">Rs 899</span>
                                             </a>
                                             <div class="ad-info">
-                                                <h5>There are many variations of passages</h5>
+                                                <h5></h5>
                                                 <span>1 hour ago</span>
                                             </div>
                                         </div>
@@ -226,14 +226,13 @@
                     <!-- //slider -->
 
 
-                    <br><br>
                     <div class="women_main">
                         <div class="deals">
 
                             <div class="mcontainer">
                                 <div class="tab-inner">
                                     <div id="tabs" class="tabs">
-                                        <h3>DEALS OF THE DAY </h3>
+                                        <h5>DEALS OF THE DAY </h5>
                                         <div class="graph">
                                             <nav>
                                                 <ul>
