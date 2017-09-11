@@ -193,62 +193,68 @@
  <section id="section-1" class="content">
                                               <!--availablity-->
      <div class="monthly-grid">
-						<div class="panel panel-widget">
+                                <div class="panel panel-widget">
 
-		<h2>Admin Dashboard </h2>
-		<i class="more-less glyphicon glyphicon-plus"></i>
-		<i class="more-less glyphicon glyphicon-minus"></i>
-		<i class="more-less glyphicon glyphicon-pencil"></i>
-        <i class="more-less glyphicon glyphicon-menu-up"></i>
-        <i class="more-less glyphicon glyphicon-menu-down"></i>
-<?php
-    require_once 'model/kickGrassHotel/HotelDisplayItems.php'; 
-?>        
-		<div class="panel-group" id="accordion">
-        <?php
-          if(isset($getProducts)) { 
-            foreach($getProducts as $item) { ?>
-                <div class="panel panel-default collapseBox">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#<?php echo $item; ?>"><?php echo $item; ?></a>
-                        </h4>
-                    </div>
-
-                    <div id="<?php echo $item; ?>" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <ul class="list-unstyled">
-                  <?php foreach($class[$item] as $row) { ?>
-                                <li>
+                                    <h2>Admin Dashboard </h2>
                                     <div class="checkbox">
                                         <label>
-                                            <p><?php echo $row['PRODUCT_NAME']; ?>
-                                                <?php if($row['AVAILABILITY'] == 1) { ?>
-                                                        <label class="switch"><input type="checkbox" value="<?php echo $row['PRODUCT_ID']; ?>" class="checkBox checked">
-                                                            <span class="slider round"></span>
-                                                        </label>
-                                                <?php  } else { ?>
-                                                        <label class="switch"><input type="checkbox" value="<?php echo $row['PRODUCT_ID']; ?>" class="checkBox">
-                                                            <span class="slider round"></span>
-                                                        </label>          
-                                                <?php } ?>
-                                            </p> 
+                                            <h3>
+                                                Shut Down Hotel
+                                                <label class="switch">
+                                                    <input type="checkbox" name="onOff[]" class="checked">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </h3>
                                         </label>
                                     </div>
-                                </li>
-                  <?php } ?>
-                            </ul>
-                        </div>
-                    </div>
-			     </div>
-            <?php } ?>		
-        <?php } ?>        
+                                    <i class="more-less glyphicon glyphicon-menu-up"></i>
+                                    <i class="more-less glyphicon glyphicon-menu-down"></i>
+                                        <?php
+                                            require_once 'model/kickGrassHotel/AdminProductList.php'; 
+                                        ?>
+                                        <div class="panel-group" id="accordion">
+                                            
+                                            <?php
+                                                if(isset($class)) { 
+                                                    foreach($class as $key => $value) { ?>
+                                                        <div class="panel panel-default collapseBox">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#accordion" href="#<?php echo $key; ?>">
+                                                                        <?php echo $key; ?>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
 
+                                                            <div id="<?php echo $key; ?>" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+                                                                    <ul class="list-unstyled">
+                                                                        <?php foreach($value as $row) { ?>
+                                                                        <li>
+                                                                            <div class="checkbox">
+                                                                                <label>
+                                                                                    <p><?php echo $row['PRODUCT_NAME']; ?>
+                                                                                        
+                                                                                        <label class="switch">
+                                                                                            <input type="checkbox" name="chk[]" value="<?php echo $row['PRODUCT_ID']; ?>" class="<?php if($row['AVAILABILITY'] == 1) { echo 'checked'; } else { echo 'unChecked'; } ?>">
+                                                                                            <span class="slider round"></span>
+                                                                                        </label>
+                                                                                    </p>
+                                                                                </label>
+                                                                            </div>
+                                                                        </li>
+                                                                        <?php } ?>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                <?php } ?>
+                                                <?php } ?>
 
-</div>
-                 
-                    </div>
-</div>
+                                        </div>
+
+                                </div>
+                            </div>
      
      <!--availablity-->
      

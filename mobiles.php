@@ -17,38 +17,118 @@
                                     <div class="graph">
                                         <nav>
                                             <ul>
-                                                <li class="tab-current"><a href="#section-0" class="icon-shop"><span>LATHANGI</span></a></li>
-                                                <li><a href="#section-1" class="icon-cup"><span>ANUSHAM</span></a></li>
-                                                <li><a href="#section-2" class="icon-cup"><span>THAJ</span></a></li>
-                                                <li><a href="#section-3" class="icon-food"><span>KALPNA</span></a></li>
+                                                <li class="tab-current"><a href="#section-0" class="icon-shop"><span>OPPO</span></a></li>
+                                                <li><a href="#section-1" class="icon-cup"><span>VIVO</span></a></li>
+                                                <li><a href="#section-2" class="icon-cup"><span>SAMSUNG</span></a></li>
+                                                <li><a href="#section-3" class="icon-food"><span>MOTO</span></a></li>
+                                                <li><a href="#section-4" class="icon-food"><span>LENOVO</span></a></li>
+                                                <li><a href="#section-5" class="icon-food"><span>NOKIA</span></a></li>
+                                                <li><a href="#section-6" class="icon-food"><span>ACCESSERIES</span></a></li>
                                             </ul>
                                         </nav>
                                         <div class="content tab">
                                             <section id="section-0" class="content-current">
                                                 <div class="l_banner_info" id="home">
                                                     <div class="mcontainer">
-                                                        <div class="about-grid2 w3l-agile">
-                                                            <div class="col-md-6 col-sm-6 about-grid about-image">
-                                                                <div class="moviename">
-                                                                    <a2>Podhuvaga En Manasu</a2>
-                                                                </div>
-                                                                <br>
+                                                        <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="http://tech.firstpost.com/wp-content/uploads/2014/09/Apple_iPhone6_Reuters.jpg" alt="" class="img-responsive">
+                
+                  <h4 class="pull-right">$700.99</h4>
+            
+                  <p>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                     (15 reviews)
+                  </p>
+                <div class="space-ten"></div>
+                <div class="btn-ground text-center">
+                    <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i> Quick View</button>
+                </div>
+                <div class="space-ten"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="http://tech.firstpost.com/wp-content/uploads/2014/09/Apple_iPhone6_Reuters.jpg" alt="" class="img-responsive">
+                <div class="caption">
+                  <h4 class="pull-right">$700.99</h4>
+                  <h4><a href="#">Mobile Product</a></h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="ratings">
+                  <p>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                     (15 reviews)
+                  </p>
+                </div>
+                <div class="space-ten"></div>
+                <div class="btn-ground text-center">
+                    <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i> Quick View</button>
+                </div>
+                <div class="space-ten"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="http://tech.firstpost.com/wp-content/uploads/2014/09/Apple_iPhone6_Reuters.jpg" alt="" class="img-responsive">
+                
+                  <h4 class="pull-right">$700.99</h4>
+                  <h4><a href=  "#">Mobile Product</a></h4>
+                                  <img src="http://tech.firstpost.com/wp-content/uploads/2014/09/Apple_iPhone6_Reuters.jpg" alt="" class="img-responsive">
 
-                                                                <img src="assets/images/biz/MOVIES/7000.jpg" class="img-responsive" alt="Capture">
-                                                            </div>
-                                                            <div class="col-md-6 col-sm-6 about-grid about-info">
-                                                                <div class="moviereview">
-                                                                    <a3>Review and Casting</a3>
-                                                                </div>
-                                                                <br>
-                                                                <br>
-                                                                <p>Udhayanidhi Stalin as Ganesh Nivetha Pethuraj as Leelavathi Parthiepan as Ex-Sarpanch Oothukaandaan Soori as Tiger Pandi G. M. Sundar Mayilsamy Rama Rajendran Namo Narayana as Ramalingam</p><br>
-                                                                <p>Podhuvaga En Manasu Thangam is a Tamil movie starring Udhayanidhi Stalin and Nivetha Pethuraj in prominent roles. The cast also includes R Mayilsamy and R Parthiban. It is an action comedy directed by Thalapathy Prabhu.</p>
-
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
+                
+                <div class="ratings">
+                  <p>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                     (15 reviews)
+                  </p>
+                </div>
+                <div class="space-ten"></div>
+                <div class="btn-ground text-center">
+                    <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i> Quick View</button>
+                </div>
+                <div class="space-ten"></div>
+              </div>
+            </div>
+    </div>
+</div>
                                                     </div>
+                                                    <div class="modal fade product_view" id="product_view">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" data-dismiss="modal" class="class pull-right"><span class="glyphicon glyphicon-remove"></span></a>
+                <h3 class="modal-title">HTML5 is a markup language</h3>
+            </div>
+            <div class="modal-body">
+                <img src="assets/images/biz/MOBILES/9001(1).jpg" alt="" class="img-responsive">
+                <div class="row">
+                    <div class="col-md-6 product_img">
+                         
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
                                                     <div class="clearfix"></div>
                                                 </div>
                                             </section>

@@ -4,59 +4,86 @@
     <?php require_once 'model/appConnection.php'; ?>
     <div class="page-container">
         <div class="left-content">
-            
             <div class="inner-content">
                 <?php include 'common/commonHeader.php'; ?>
                 <!--content-->
                 <div class="content">
                     <!-- banner-slider -->
-                    <div class="l_banner_info" id="home">
-                        <div href="news.php" class="slider">
-                            <div class="callbacks_container">
-                                <a  href="news.php">
-                                <ul class="rslides" id="slider3">
-                                    <li>
-                                        <div class="slider-img">
-                                            <img src="assets/images/b2.jpg" class="img-responsive" alt="impetus">
+                    
+            <div class="women_main">
+                        <div class="deals">
+                            <div class="mcontainer">
+                                <div class="tab-inner">
+                                    <div id="tabs" class="tabs">
+                                        <h5>DEALS OF THE DAY </h5>
+                                        <div class="graph">
+                                            <nav>
+                                                <ul>
+                                                    <li class="tab-current"><a  href="#section-0" class="icon-shop"><span>Mobile</span></a></li>
+                                                    <li><a href="kickGrass.php" class="icon-cup"><span>Hotels</span></a></li>
+                                                    <li><a  href="movies.php" class="icon-food"><span>Movies</span></a></li>
+                                                    <li><a class="icon-lab"><span>Parlours</span></a></li>
+                                                    <li><a class="icon-truck"><span>Clothing</span></a></li>
+                                                </ul>
+                                            </nav>
                                         </div>
-                                    </li>
-                                    <li>
-                                        <div class="slider-img">
-                                            <img src="assets/images/b1.jpg" class="img-responsive" alt="impetus">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="slider-img">
-                                            <img src="assets/images/b3.jpg" class="img-responsive" alt="impetus">
-                                        </div>
-                                    </li>
-                                </ul>
-                                    </a>
+                                        <!-- /tabs -->
+                                    </div>
+                                </div>
+                            </div>
+<div class="content tab">
+                                                <section id="section-0" class="content-current">
+                            <!-- //banner-slider -->
+                            <div class="l_banner_info" id="home">
+                                <div class="slider">
+                                    <div class="callbacks_container">
+                                        <ul class="rslides" id="slider4">
+                            
+                                            <li>
+                                                <div class="slider-img">
+                                                    <img src="assets/images/b2.jpg" class="img-responsive" alt="impetus">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="slider-img">
+                                                    <img src="assets/images/b1.jpg" class="img-responsive" alt="impetus">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="slider-img">
+                                                    <img src="assets/images/b3.jpg" class="img-responsive" alt="impetus">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <script>
+                                $(function() {
+                                    // Slideshow 3
+                                    $("#slider4").responsiveSlides({
+                                        auto: true,
+                                        pager: true,
+                                        nav: true,
+                                        speed: 400,
+                                        namespace: "callbacks",
+                                        before: function() {
+                                            $('.events').append("<li>before event fired.</li>");
+                                        },
+                                        after: function() {
+                                            $('.events').append("<li>after event fired.</li>");
+                                        }
+                                    });
+
+                                });
+                            </script>
+
+    </section>
                             </div>
                         </div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <script src="assets/js/responsiveslides.min.js"></script>
-                    <script>
-                        // You can also use "$(window).load(function() {"
-                        $(function() {
-                            // Slideshow 3
-                            $("#slider3").responsiveSlides({
-                                auto: true,
-                                pager: true,
-                                nav: true,
-                                speed: 500,
-                                namespace: "callbacks",
-                                before: function() {
-                                    $('.events').append("<li>before event fired.</li>");
-                                },
-                                after: function() {
-                                    $('.events').append("<li>after event fired.</li>");
-                                }
-                            });
-
-                        });
-                    </script>
+                    </div>          
       
                     <div class="trending-ads">
                         <div class="monthly-grid">
@@ -223,81 +250,71 @@
                         </div>
                         <div class="clearfix"></div>
                     </div>
-                    <!-- //slider -->
-
-
-                    <div class="women_main">
-                        <div class="deals">
-
-                            <div class="mcontainer">
-                                <div class="tab-inner">
-                                    <div id="tabs" class="tabs">
-                                        <h5>DEALS OF THE DAY </h5>
-                                        <div class="graph">
-                                            <nav>
-                                                <ul>
-                                                    <li class="tab-current"><a class="icon-shop"><span>MObile</span></a></li>
-                                                    <li class="tab-current"><a href="kickGrass.php" class="icon-cup"><span>Hotels</span></a></li>
-                                                    <li class="tab-current"><a href="movies.php" class="icon-food"><span>MOVIES</span></a></li>
-                                                    <li class="tab-current"><a class="icon-lab"><span>parlours</span></a></li>
-                                                    <li class="tab-current"><a class="icon-truck"><span>clothing</span></a></li>
-                                                </ul>
-                                            </nav>
+                    
+                     <div class="l_banner_info" id="home">
+                        
+                        <div class="slider">
+                            <div class="callbacks_container">
+                                <a  href="news.php">
+                                <ul class="rslides" id="slider3">
+                                    <li>
+                                        <div class="slider-img">
+                                            <img src="assets/images/snake1.jpg" class="img-responsive" alt="impetus">
                                         </div>
-                                        <!-- /tabs -->
-                                    </div>
-                                </div>
+                                        <div class="slider_banner_info">
+										<div class="w3ls-info">
+											 <h4  href="news.php">cLICK HERE TO KNOW ABOUT THIS PICS</h4>
+										</div>
+										</div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-img">
+                                            <img src="assets/images/b1.jpg" class="img-responsive" alt="impetus">
+                                        </div><div class="slider_banner_info">
+										<div class="w3ls-info">
+											 <h4  href="news.php">cLICK HERE TO KNOW ABOUT THIS PICS</h4>
+										</div>
+										</div>
+                                    </li>
+                                    <li>
+                                        <div class="slider-img">
+                                            <img src="assets/images/b3.jpg" class="img-responsive" alt="impetus">
+                                        </div>
+                                        <div class="slider_banner_info">
+										<div class="w3ls-info">
+											 <h4  href="news.php">cLICK HERE TO KNOW ABOUT THIS PICS</h4>
+										</div>
+										</div>
+                                    </li>
+                                </ul>
+                                    </a>
                             </div>
-
-                            <!-- //banner-slider -->
-                            <div class="l_banner_info" id="home">
-                                <div class="slider">
-                                    <div class="callbacks_container">
-                                        <ul class="rslides" id="slider4">
-                                            <li>
-                                                <div class="slider-img">
-                                                    <img src="assets/images/b2.jpg" class="img-responsive" alt="impetus">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="slider-img">
-                                                    <img src="assets/images/b1.jpg" class="img-responsive" alt="impetus">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="slider-img">
-                                                    <img src="assets/images/b3.jpg" class="img-responsive" alt="impetus">
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-
-                            <script>
-                                $(function() {
-                                    // Slideshow 3
-                                    $("#slider4").responsiveSlides({
-                                        auto: true,
-                                        pager: true,
-                                        nav: true,
-                                        speed: 400,
-                                        namespace: "callbacks",
-                                        before: function() {
-                                            $('.events').append("<li>before event fired.</li>");
-                                        },
-                                        after: function() {
-                                            $('.events').append("<li>after event fired.</li>");
-                                        }
-                                    });
-
-                                });
-                            </script>
-
-
                         </div>
                     </div>
+                    <div class="clearfix"></div>
+                    <script src="assets/js/responsiveslides.min.js"></script>
+                    <script>
+                        // You can also use "$(window).load(function() {"
+                        $(function() {
+                            // Slideshow 3
+                            $("#slider3").responsiveSlides({
+                                auto: true,
+                                pager: true,
+                                nav: true,
+                                speed: 500,
+                                namespace: "callbacks",
+                                before: function() {
+                                    $('.events').append("<li>before event fired.</li>");
+                                },
+                                after: function() {
+                                    $('.events').append("<li>after event fired.</li>");
+                                }
+                            });
+
+                        });
+                    </script>
+                    <!-- //slider -->
+                 
                 </div>
                 <div class="col-md-5 skil">
 								<div class="content-top-1">

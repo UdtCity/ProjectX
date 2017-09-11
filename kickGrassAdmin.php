@@ -11,6 +11,8 @@
         
         .switch {
             position: relative;
+            float: right;
+            margin-right: 105px;
             display: inline-block;
             width: 60px;
             height: 34px;
@@ -257,22 +259,22 @@
             <script src="assets/js/bootstrap.js"></script>
             
             <script>
-                $(document).ready(function() {
-                    /*$('input[name="chk[]"]').each(function() {
+                /*$(document).ready(function() {
+                    $('input[name="chk[]"]').each(function() {
                         if($(this).hasClass('checked')) {
                            $(this).next(".slider").toggleClass('checked');
                         }
-                    });  */  
-                });
+                    });    
+                });*/
                 
                     $('input[name="chk[]"]').click(function() {
 
                         $(this).next(".slider").toggleClass('checked');
                         
                         if ($(this).hasClass('checked')) {
-                            checkAvail = 0;
-                        } else {
                             checkAvail = 1;
+                        } else {
+                            checkAvail = 0;
                         }
                         
                         $(this).toggleClass("checked");
