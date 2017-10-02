@@ -15,14 +15,13 @@
                         <div class="women_main">
     
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <div class="well-block">
                         <div class="well-title">
-                            <h2>Questions? Book an Appointment</h2>
+                            <h2>Book an Appointment</h2>
                         </div>
                         <form>
                             <!-- Form start -->
-                            <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label" for="name">Name</label>
@@ -33,7 +32,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label" for="name">MobileNo</label>
-                                        <input id="mobile" placeholder= "+91 phone number:" type="number" tabindex="3" class="form-control input-md">
+                                        <input id="mobile" placeholder= "+91 phone number:" type="text" tabindex="3" class="form-control input-md">
                                     </div>
                                 </div>
                                 <!-- Text input-->
@@ -102,8 +101,6 @@
                                         <button id="singlebutton" name="singlebutton" class="btn btn-default">Make An Appointment</button>
                                     </div>
                                 </div>
-                            </div>
-                                
                         </form>
                         <!-- form end -->
                     </div>
