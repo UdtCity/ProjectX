@@ -1,10 +1,15 @@
 <div class="header-section">
+    <div class="header-section">
+			<!-- top_bg -->
+				<!-- /top_bg -->
+				</div>
     <div class="header_bg">
         <div class="header">
             <div class="head-t">
                 <!-- start header_right -->
                 <div class="header_right">
                     <div class="rgt-bottom">
+                        
                         <div class="log">
                             <?php if(!isset($_SESSION['USERNM'])) { ?>
                             <div class="login">
@@ -44,7 +49,7 @@
                         </div>
                         <div class="cart box_1">
                             <a href="cart.php">
-                                <h3><span class="simpleCart_total"></span><span id="simpleCart_quantity" class="simpleCart_quantity"></span><img src="images/bag.png" alt=""></h3>
+                                <h3><span class="simpleCart_total"></span><span id="simpleCart_quantity" class="simpleCart_quantity"></span><img  alt=""></h3>
                             </a>
                             <p>
                                 <a href="javascript:;" class="simpleCart_empty"></a>
