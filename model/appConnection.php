@@ -4,8 +4,8 @@
 
 	class Connection {
         
-		public static function openConnection()
-		{
+		public static function openConnection() {
+            
             $host = "mysql:host=localhost;dbname=projectx";
             $user = "root";
             $pass = "";
