@@ -13,7 +13,7 @@
                         return json_encode($RESPONSE['Status'] = 'failed');
                     }
                     else {
-                        $_SESSION['USERID'] = $result['USERID'];
+                        $_SESSION['USERID'] = $result['USER_ID'];
                         $_SESSION['USERNM'] = $result['USERNAME'];
                         $_SESSION['USERMB'] = $result['MOBILE_NO'];
                         $_SESSION['USERAD'] = $result['ADDRESS'];
