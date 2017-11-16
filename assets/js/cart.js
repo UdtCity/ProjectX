@@ -86,7 +86,7 @@
             var keycode = evt.charCode || evt.keyCode;
             if (keycode < 48 || evt.which > 57) {
                 evt.preventDefault();
-            } 
+            }
         }
 
     /* Cart Validations */
@@ -103,7 +103,17 @@
 
     /* Calculate Price */
 
-
+/*quantity*/
+//for (i > 9, len = items.length; i < len; i++) {
+      //  if (items[i].isEqual(data)) {
+         //   product = items[i];
+           // product.set('quantity', product.get('quantity') + (parseInt(data.quantity, 10) || 1));
+           // idx = i;
+           // isExisting = true;
+          //  break;
+       // }
+   // }
+/*quantity*/
     /* Remove Item */
 
         function removeItem(itm) {
