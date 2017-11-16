@@ -9,8 +9,8 @@
                 <!--content-->
                 <div class="content">
                     <!-- banner-slider -->
-                    
-            <div class="women_main">
+
+                    <div class="women_main">
                         <div class="deals">
                             <div class="mcontainer">
                                 <div class="tab-inner">
@@ -19,11 +19,14 @@
                                         <div class="graph">
                                             <nav>
                                                 <ul>
-                                                    <li class="tab-current"><a  href="#section-0" class="icon-shop"><span>Mobile</span></a></li>
-                                                    <li><a href="kickGrass.php" class="icon-cup"><span>Hotels</span></a></li>
-                                                    <li><a  href="movies.php" class="icon-food"><span>Movies</span></a></li>
-                                                    <li><a class="icon-lab"><span>Parlours</span></a></li>
-                                                    <li><a class="icon-truck"><span>Clothing</span></a></li>
+                                                    <li class="tab-current"><img src="assets/images/icons/007-hand-graving-smartphone.png" width="45px" height="45px"><a href="#section-0" class="icon-shop"><span>Mobile</span></a></li>
+                                                    <li><img href="kickGrass.php" src="assets/images/icons/006-food.png" width="45px" height="45px"><a href="kickGrass.php" class="icon-cup" title="RESTUARANT"><span></span>Restuarant</a></li>
+                                                    <li><img src="assets/images/icons/005-video-player-sign.png" width="45px" height="45px"><a href="movies.php" class="icon-food"><span>Movies</span></a></li>
+                                                    <li><img src="assets/images/icons/004-hair-salon-situation-of-two-persons.png" width="45px" height="45px"><a class="icon-lab"><span>Men's Parlours</span></a></li>
+                                                    <li><img src="assets/images/icons/003-female-hair-shape-and-face-silhouette.png" width="45px" height="45px"><a class="icon-lab"><span>Women's Parlours</span></a></li>
+                                                    <li><img src="assets/images/icons/002-tuxedo.png" width="45px" height="45px"><a class="icon-truck"><span>Men's Clothing</span></a></li>
+                                                    <li><img src="assets/images/icons/001-dress.png" width="45px" height="45px"><a class="icon-truck"><span>Women's Clothing</span></a></li>
+
                                                 </ul>
                                             </nav>
                                         </div>
@@ -31,263 +34,99 @@
                                     </div>
                                 </div>
                             </div>
-<div class="content tab">
-                                                <section id="section-0" class="content-current">
-                            <!-- //banner-slider -->
-                            <div class="l_banner_info" id="home">
-                                <div class="slider">
-                                    <div class="callbacks_container">
-                                        <ul class="rslides" id="slider4">
-                            
-                                            <li>
-                                                <div class="slider-img">
-                                                    <img src="assets/images/b2.jpg" class="img-responsive" alt="impetus">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="slider-img">
-                                                    <img src="assets/images/b1.jpg" class="img-responsive" alt="impetus">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="slider-img">
-                                                    <img src="assets/images/b3.jpg" class="img-responsive" alt="impetus">
-                                                </div>
-                                            </li>
-                                        </ul>
+                            <div class="content tab">
+                                <section id="section-0" class="content-current">
+                                    <!-- //banner-slider -->
+                                    <div class="l_banner_info" id="home">
+                                        <div class="slider">
+                                            <div class="callbacks_container">
+                                                <ul class="rslides" id="slider4">
+
+                                                    <li>
+                                                        <div class="slider-img">
+                                                            <img src="assets/images/b2.jpg" class="img-responsive" alt="impetus">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="slider-img">
+                                                            <img src="assets/images/b1.jpg" class="img-responsive" alt="impetus">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="slider-img">
+                                                            <img src="assets/images/b3.jpg" class="img-responsive" alt="impetus">
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
 
-                            <script>
-                                $(function() {
-                                    // Slideshow 3
-                                    $("#slider4").responsiveSlides({
-                                        auto: true,
-                                        pager: true,
-                                        nav: true,
-                                        speed: 400,
-                                        namespace: "callbacks",
-                                        before: function() {
-                                            $('.events').append("<li>before event fired.</li>");
-                                        },
-                                        after: function() {
-                                            $('.events').append("<li>after event fired.</li>");
-                                        }
-                                    });
-
-                                });
-                            </script>
-
-    </section>
-                            </div>
-                        </div>
-                    </div>          
-      
-                    <div class="trending-ads">
-                        <div class="monthly-grid">
-                            <!-- slider -->
-                            <div class="trend-ads">
-                                <h2>Trending Ads</h2>
-                                <ul id="flexiselDemo3">
-                                    <li>
-                                        <div class="col-md-3 biseller-column">
-                                            <a href="single.html">
-                                                <img src="images/p1.jpg" />
-                                                <span class="price">Rs 450</span>
-                                            </a>
-                                            <div class="ad-info">
-                                                <h5></h5>
-                                                <span>1 hour ago</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 biseller-column">
-                                            <a href="single.html">
-                                                <img src="images/p2.jpg" />
-                                                <span class="price">Rs 399</span>
-                                            </a>
-                                            <div class="ad-info">
-                                                <h5></h5>
-                                                <span>3 hour ago</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 biseller-column">
-                                            <a href="single.html">
-                                                <img src="images/p3.jpg" />
-                                                <span class="price">Rs 199</span>
-                                            </a>
-                                            <div class="ad-info">
-                                                <h5></h5>
-                                                <span>8 hour ago</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 biseller-column">
-                                            <a href="single.html">
-                                                <img src="images/p4.jpg" />
-                                                <span class="price">Rs 159</span>
-                                            </a>
-                                            <div class="ad-info">
-                                                <h5></h5>
-                                                <span>19 hour ago</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="col-md-3 biseller-column">
-                                            <a href="single.html">
-                                                <img src="images/p5.jpg" />
-                                                <span class="price">Rs 1599</span>
-                                            </a>
-                                            <div class="ad-info">
-                                                <h5></h5>
-                                                <span>1 hour ago</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 biseller-column">
-                                            <a href="single.html">
-                                                <img src="images/p6.jpg" />
-                                                <span class="price">Rs 1099</span>
-                                            </a>
-                                            <div class="ad-info">
-                                                <h5></h5>
-                                                <span>1 day ago</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 biseller-column">
-                                            <a href="single.html">
-                                                <img src="images/p7.jpg" />
-                                                <span class="price">Rs 109</span>
-                                            </a>
-                                            <div class="ad-info">
-                                                <h5></h5>
-                                                <span>9 hour ago</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 biseller-column">
-                                            <a href="single.html">
-                                                <img src="images/p8.jpg" />
-                                                <span class="price">Rs 189</span>
-                                            </a>
-                                            <div class="ad-info">
-                                                <h5></h5>
-                                                <span>3 hour ago</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="col-md-3 biseller-column">
-                                            <a href="single.html">
-                                                <img src="images/p9.jpg" />
-                                                <span class="price">Rs 2599</span>
-                                            </a>
-                                            <div class="ad-info">
-                                                <h5></h5>
-                                                <span>3 hour ago</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 biseller-column">
-                                            <a href="single.html">
-                                                <img src="images/p10.jpg" />
-                                                <span class="price">Rs 3999</span>
-                                            </a>
-                                            <div class="ad-info">
-                                                <h5></h5>
-                                                <span>9 hour ago</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 biseller-column">
-                                            <a href="single.html">
-                                                <img src="images/p11.jpg" />
-                                                <span class="price">Rs 2699</span>
-                                            </a>
-                                            <div class="ad-info">
-                                                <h5></h5>
-                                                <span>1 day ago</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 biseller-column">
-                                            <a href="single.html">
-                                                <img src="images/p12.jpg" />
-                                                <span class="price">Rs 899</span>
-                                            </a>
-                                            <div class="ad-info">
-                                                <h5></h5>
-                                                <span>1 hour ago</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <script type="text/javascript">
-                                    $(window).load(function() {
-                                        $("#flexiselDemo3").flexisel({
-                                            visibleItems: 2,
-                                            animationSpeed: 1000,
-                                            autoPlay: true,
-                                            autoPlaySpeed: 5000,
-                                            pauseOnHover: true,
-                                            enableResponsiveBreakpoints: true,
-                                            responsiveBreakpoints: {
-                                                portrait: {
-                                                    changePoint: 480,
-                                                    visibleItems: 3
+                                    <script>
+                                        $(function() {
+                                            // Slideshow 3
+                                            $("#slider4").responsiveSlides({
+                                                auto: true,
+                                                pager: true,
+                                                nav: true,
+                                                speed: 400,
+                                                namespace: "callbacks",
+                                                before: function() {
+                                                    $('.events').append("<li>before event fired.</li>");
                                                 },
-                                                landscape: {
-                                                    changePoint: 640,
-                                                    visibleItems: 3
-                                                },
-                                                tablet: {
-                                                    changePoint: 768,
-                                                    visibleItems: 3
+                                                after: function() {
+                                                    $('.events').append("<li>after event fired.</li>");
                                                 }
-                                            }
+                                            });
+
                                         });
 
-                                    });
-                                </script>
-                                <script type="text/javascript" src="assets/js/jquery.flexisel.js"></script>
+                                    </script>
+
+                                </section>
                             </div>
                         </div>
-                        <div class="clearfix"></div>
                     </div>
-                    
-                     <div class="l_banner_info" id="home">
-                        
+
+                    <div class="l_banner_info" id="home">
+
                         <div class="slider">
                             <div class="callbacks_container">
-                                <a  href="news.php">
-                                <ul class="rslides" id="slider3">
-                                    <li>
-                                        <div class="slider-img">
-                                            <img src="assets/images/snake1.jpg" class="img-responsive" alt="impetus">
-                                        </div>
-                                        <div class="slider_banner_info">
-										<div class="w3ls-info">
-											 <h4  href="news.php">cLICK HERE TO KNOW ABOUT THIS PICS</h4>
-										</div>
-										</div>
-                                    </li>
-                                    <li>
-                                        <div class="slider-img">
-                                            <img src="assets/images/b1.jpg" class="img-responsive" alt="impetus">
-                                        </div><div class="slider_banner_info">
-										<div class="w3ls-info">
-											 <h4  href="news.php">cLICK HERE TO KNOW ABOUT THIS PICS</h4>
-										</div>
-										</div>
-                                    </li>
-                                    <li>
-                                        <div class="slider-img">
-                                            <img src="assets/images/b3.jpg" class="img-responsive" alt="impetus">
-                                        </div>
-                                        <div class="slider_banner_info">
-										<div class="w3ls-info">
-											 <h4  href="news.php">cLICK HERE TO KNOW ABOUT THIS PICS</h4>
-										</div>
-										</div>
-                                    </li>
-                                </ul>
-                                    </a>
+                                <a href="news.php">
+                                    <ul class="rslides" id="slider3">
+                                        <li>
+                                            <div class="slider-img">
+                                                <img src="assets/images/snake1.jpg" class="img-responsive" alt="impetus">
+                                            </div>
+                                            <div class="slider_banner_info">
+                                                <div class="w3ls-info">
+                                                    <h4 href="news.php">cLICK HERE TO KNOW ABOUT THIS PICS</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="slider-img">
+                                                <img src="assets/images/b1.jpg" class="img-responsive" alt="impetus">
+                                            </div>
+                                            <div class="slider_banner_info">
+                                                <div class="w3ls-info">
+                                                    <h4 href="news.php">cLICK HERE TO KNOW ABOUT THIS PICS</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="slider-img">
+                                                <img src="assets/images/b3.jpg" class="img-responsive" alt="impetus">
+                                            </div>
+                                            <div class="slider_banner_info">
+                                                <div class="w3ls-info">
+                                                    <h4 href="news.php">cLICK HERE TO KNOW ABOUT THIS PICS</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -312,90 +151,92 @@
                             });
 
                         });
+
                     </script>
                     <!-- //slider -->
-                 
+
                 </div>
                 <div class="col-md-5 skil">
-								<div class="content-top-1">
-									<div class="col-md-6 top-content">
-										<h5>UDT WHETHER</h5>
-										<label></label>
-									</div>
-									<div class="col-md-6 top-content1">	   
-										<div id="demo-pie-1" class="pie-title-center" data-percent="25"> <span class="pie-value">25%</span> </div>
-									</div>
-										<div class="clearfix"> </div>
-								</div>
-								<div class="content-top-1">
-									<div class="col-md-6 top-content">
-										<h5>Petrol TODAYRATE</h5>
-										<label></label>
-									</div>
-									<div class="col-md-6 top-content1">	   
-										<div id="demo-pie-2" class="pie-title-center" data-percent="50"> <span class="pie-value">50%</span> </div>
-									</div>
-									 <div class="clearfix"> </div>
-								</div>
-								<div class="content-top-1">
-									<div class="col-md-6 top-content">
-										<h5>Cards</h5>
-										<label></label>
-									</div>
-									<div class="col-md-6 top-content1">	   
-										<div id="demo-pie-3" class="pie-title-center" data-percent="75"> <span class="pie-value">75%</span> </div>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-							</div>
-							<div class="col-md-7 mid-content-top">
-								<div class="middle-content">
-									<h3>Latest Products
-									</h3>
-									<!-- start content_slider -->
-										<div id="owl-demo" class="owl-carousel text-center">
-											<div class="item">
-												<img class="lazyOwl img-responsive" data-src="assets/images/na.jpg" alt="name">
-											</div>
-											<div class="item">
-												<img class="lazyOwl img-responsive" data-src="assets/images/na1.jpg" alt="name">
-											</div>
-											<div class="item">
-												<img class="lazyOwl img-responsive" data-src="assets/images/na2.jpg" alt="name">
-											</div>
-											<div class="item">
-												<img class="lazyOwl img-responsive" data-src="assets/images/na.jpg" alt="name">
-											</div>
-											<div class="item">
-												<img class="lazyOwl img-responsive" data-src="assets/images/na1.jpg" alt="name">
-											</div>
-											<div class="item">
-												<img class="lazyOwl img-responsive" data-src="assets/images/na2.jpg" alt="name">
-											</div>
-											<div class="item">
-												<img class="lazyOwl img-responsive" data-src="assets/images/na.jpg" alt="name">
-											</div>
-											
-										</div>
-								</div>
-								<!--//sreen-gallery-cursual---->
-								<!-- requried-jsfiles-for owl -->
-								<link href="assets/css/owl.carousel.css" rel="stylesheet">
-								<script src="assets/js/owl.carousel.js"></script>
-									<script>
-										$(document).ready(function() {
-											$("#owl-demo").owlCarousel({
-												items : 3,
-												lazyLoad : true,
-												autoPlay : true,
-												pagination : true,
-												nav:true,
-											});
-										});
-									</script>
-								<!-- //requried-jsfiles-for owl -->
-						</div>
-						<div class="clearfix"></div>
+                    <div class="content-top-1">
+                        <div class="col-md-6 top-content">
+                            <h5>UDT WHETHER</h5>
+                            <label></label>
+                        </div>
+                        <div class="col-md-6 top-content1">
+                            <div id="demo-pie-1" class="pie-title-center" data-percent="25"> <span class="pie-value">25%</span> </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="content-top-1">
+                        <div class="col-md-6 top-content">
+                            <h5>Petrol TODAYRATE</h5>
+                            <label></label>
+                        </div>
+                        <div class="col-md-6 top-content1">
+                            <div id="demo-pie-2" class="pie-title-center" data-percent="50"> <span class="pie-value">50%</span> </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="content-top-1">
+                        <div class="col-md-6 top-content">
+                            <h5>Cards</h5>
+                            <label></label>
+                        </div>
+                        <div class="col-md-6 top-content1">
+                            <div id="demo-pie-3" class="pie-title-center" data-percent="75"> <span class="pie-value">75%</span> </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+                <div class="col-md-7 mid-content-top">
+                    <div class="middle-content">
+                        <h3>Latest Products
+                        </h3>
+                        <!-- start content_slider -->
+                        <div id="owl-demo" class="owl-carousel text-center">
+                            <div class="item">
+                                <img class="lazyOwl img-responsive" data-src="assets/images/na.jpg" alt="name">
+                            </div>
+                            <div class="item">
+                                <img class="lazyOwl img-responsive" data-src="assets/images/na1.jpg" alt="name">
+                            </div>
+                            <div class="item">
+                                <img class="lazyOwl img-responsive" data-src="assets/images/na2.jpg" alt="name">
+                            </div>
+                            <div class="item">
+                                <img class="lazyOwl img-responsive" data-src="assets/images/na.jpg" alt="name">
+                            </div>
+                            <div class="item">
+                                <img class="lazyOwl img-responsive" data-src="assets/images/na1.jpg" alt="name">
+                            </div>
+                            <div class="item">
+                                <img class="lazyOwl img-responsive" data-src="assets/images/na2.jpg" alt="name">
+                            </div>
+                            <div class="item">
+                                <img class="lazyOwl img-responsive" data-src="assets/images/na.jpg" alt="name">
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--//sreen-gallery-cursual---->
+                    <!-- requried-jsfiles-for owl -->
+                    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+                    <script src="assets/js/owl.carousel.js"></script>
+                    <script>
+                        $(document).ready(function() {
+                            $("#owl-demo").owlCarousel({
+                                items: 3,
+                                lazyLoad: true,
+                                autoPlay: true,
+                                pagination: true,
+                                nav: true,
+                            });
+                        });
+
+                    </script>
+                    <!-- //requried-jsfiles-for owl -->
+                </div>
+                <div class="clearfix"></div>
                 <!--content-->
                 <?php include 'common/commonFooter.php'; ?>
                 <?php include 'common/commonNavigation.php'; ?>
@@ -403,4 +244,5 @@
         </div>
     </div>
 </body>
+
 </html>

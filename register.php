@@ -21,14 +21,14 @@
                                             <label><input id="email" placeholder="email:" type="email" tabindex="2" required></label>
                                         </div>
                                         <div>
-                                            <label><input id="mobile" placeholder= "+91 phone number:" type="text" tabindex="3"></label>
+                                            <label><input id="mobile" placeholder= "+91 phone number:" maxlength="10" type="text" tabindex="3" required></label>
                                         </div>
                                         <div>
-                                            <label><input id="pass1" placeholder="password" type="password" tabindex="4"></label>
+                                            <label><input id="pass1" placeholder="password" type="password" tabindex="4"required></label>
                                         </div>
                                         <div>
                                             <label>
-                                                    <input id="pass2" placeholder="retype password" type="password" tabindex="5">
+                                                    <input id="pass2" placeholder="retype password" type="password" tabindex="5"required>
                                                     <div id="pass" style="display:none">
                                                         <br>Password doesn't Match <span class="glyphicon glyphicon-remove"></span>
                                                     </div>
@@ -36,12 +36,12 @@
                                         </div>
                                         <div>
                                             <label>
-                                                    <input id="address" placeholder="Address" type="text" tabindex="6">
+                                                    <input id="address" placeholder="Address" type="text" tabindex="6" required>
                                                 </label>
 
                                         </div>
                                         <div>
-                                            <input id="signup" type="submit" value="create an account">
+                                            <input id="signup" type="submit" onclick="function ValidateContactForm()" value="create an account">
                                         </div>
                                     </form>
                                 </div>
@@ -52,7 +52,7 @@
                                     <!-- Form -->
                                     <form>
                                         <div>
-                                            <label><input id="mobl" placeholder="Mobile No" type="text" tabindex="3" required></label>
+                                            <label><input id="mobl" placeholder="Mobile No/username" type="text" tabindex="3" required></label>
                                         </div>
                                         <div>
                                             <label><input id="pass"placeholder="password" type="password" tabindex="4" required=""></label>
@@ -94,7 +94,7 @@
                                 <div class="stay">
                                     <div class="stay-left">
                                         <form>
-                                            <input type="text" placeholder="Enter your email" required="">
+                                            <input type="text" placeholder="Enter your email" required>
                                         </form>
                                     </div>
                                     <div class="btn-1">
@@ -116,5 +116,27 @@
         </div>
     </div>
 </body>
+<script>
+    /*emailvalidation*/
+    
+     function validate(email) {
 
+            var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+            //var address = document.getElementById[email].value;
+            if (reg.test(email) == false) 
+            {
+                alert('Invalid Email Address');
+                return (false);
+            }
+ }
+/*mobilevalidation*/
+    function testInput1(event1) {
+   var value = String.fromCharCode(event1.which);
+   var pattern = new RegExp(/[0-9 ]/i);
+   return pattern.test(value);
+}
+
+$('#mobile').bind('keypress', testInput1)
+    
+</script>
 </html>

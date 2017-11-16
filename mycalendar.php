@@ -1,5 +1,4 @@
-
-                    <div class="content">
+                 <div class="content">
                         <div class="women_main">
                             <div class="tab-main">
                                 <div class="tab-inner">
