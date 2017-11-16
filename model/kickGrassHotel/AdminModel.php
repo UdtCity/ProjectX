@@ -140,4 +140,32 @@
             
         }
         
+        static public function insertOffer($arr) {
+            
+             try {
+                $conn = Connection::openConnection();
+                $stmt = $conn->prepare("INSERT INTO kickgrass_offer(PRODUCT_ID, OFFER_NAME, DESCRIPTION, PRICE, CLASS) VALUES(:id, :name, :desc, :price, :class)") ;
+                $stmt->execute(array(
+                    ':id' => $arr['offerId'],
+                    ':name' => $arr['offerName'], 
+                    ':desc' => $arr['offerDesc'], 
+                    ':price' => $arr['offerPrice'],
+                    ':class' => $arr['offerClass'],
+                    ));
+                
+                if($stmt) {
+                    return true;
+                }
+                else {
+                    return false;
+                }                
+            }
+        
+            catch (PDOException $e) {
+                echo "There is some problem in connection: " . $e->getMessage();
+            }
+            
+        }
+        
+        
     }

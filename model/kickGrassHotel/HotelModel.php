@@ -6,10 +6,11 @@
 
        static public function fetchProducts($biz) {
 
-            try {
+           try {
+                $stat = 1;
                 $conn = Connection::openConnection();
-                $stmt = $conn->prepare("SELECT * FROM kickgrass_biz WHERE CLASS = :biz");
-                $stmt->execute(array(':biz' => $biz));
+                $stmt = $conn->prepare("SELECT * FROM kickgrass_biz WHERE CLASS = :biz AND availability = :stat");
+                $stmt->execute(array(':biz' => $biz,':stat' => $stat));
                 $stmt->setFetchMode(PDO::FETCH_ASSOC); 		    
                 $result = $stmt->fetchAll();		    
                 $conn = Connection::closeConnection();
